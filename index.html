@@ -165,21 +165,21 @@
 <div class="container">
     <div class="header">
         <h1>📝 日常与创作</h1>
-        <p>写作 · 观察 · 技能 · 大学</p>
+        <p>小说(含GL,BL,无CP) · 人物A的观察 · 技能学习可尝试版 · 大学生活</p>
     </div>
 
     <div class="category">
-        <div class="category-title">✍️ 写作 · 标题奇特</div>
+        <div class="category-title">✍️ 小说(含GL,BL,无CP)</div>
         <div class="card-grid" id="writing-grid"></div>
     </div>
 
     <div class="category">
-        <div class="category-title">👀 人物观察</div>
+        <div class="category-title">👀 人物A的观察</div>
         <div class="card-grid" id="observation-grid"></div>
     </div>
 
     <div class="category">
-        <div class="category-title">🛠️ 技能</div>
+        <div class="category-title">🛠️ 技能学习可尝试版</div>
         <div class="card-grid" id="skills-grid"></div>
     </div>
 
@@ -189,7 +189,7 @@
     </div>
 
     <div class="footer">
-        <p>📌 持续更新 · 记录成长</p>
+        <p>📌 持续更新 · 记录生活</p>
     </div>
 </div>
 
@@ -343,17 +343,21 @@
 
     // ================= 文章数据 =================
     const writingArticles = [
-        { path: "writing/renwai/hua-cheng.txt", title: "花城异闻录", desc: "一座永不凋零的城，住着不该存在的人。", tag: "人外" },
-        { path: "writing/renwai/shou-yi.txt", title: "兽医手记", desc: "来我诊所的，从来不只是动物。", tag: "人外" },
-        { path: "writing/kongbu/di-tie-mo.txt", title: "午夜地铁的最后一节车厢", desc: "每天坐末班车的人，都听见了同一个声音。", tag: "恐怖" },
-        { path: "writing/kongbu/zhao-pian.txt", title: "那张拍立得里多了一个人", desc: "我明明只拍了风景。", tag: "恐怖" },
-        { path: "writing/qingshen/shi-nian.txt", title: "十年后我才看懂那封没寄出的信", desc: "有些话，当时说不出口就永远错过了。", tag: "情深" },
-        { path: "writing/pingdan/wan-fan.txt", title: "每天晚饭后的一小时", desc: "最普通的生活里藏着最珍贵的东西。", tag: "平淡" }
+        { path: "writing/renwai/hua-cheng.txt", title: "小镇异闻录", desc: "这个以花闻名的小城，人的影子在动物化。", tag: "人外BL" },
+        { path: "writing/renwai/chong-zi.txt", title: "直男虫母", desc: "一个又怂又胆大的人穿书后。", tag: "人外BL" },
+        { path: "writing/renwai/guai-wu.txt", title: "网恋对象是怪物", desc: "原来它真的能爬进我的房间。", tag: "人外BL" },
+        { path: "writing/renwai/shou-yi.txt", title: "饲养记录", desc: "作为人类的我被石头饲养了。", tag: "人外BL" },
+        { path: "writing/kongbu/di-tie-mo.txt", title: "校园里的娃娃", desc: "黄昏开始腐朽，贵族学院依旧奢靡。", tag: "恐怖GL" },
+        { path: "writing/kongbu/zhao-pian.txt", title: "异样的她", desc: "我孵化出的孩子，丢失在了研究所。", tag: "恐怖GL" },
+        { path: "writing/renwai/tu-zi.txt", title: "合租日常", desc: "蛋糕丢失案。", tag: "人外GL" },
+        { path: "writing/qingshen/shi-nian.txt", title: "怪谈月亮", desc: "有些话，当时说出口就永远反悔不了。", tag: "情深BL" },
+        { path: "writing/renwai/gan-zhi.txt", title: "无限流的我一直安静", desc: "我能感知一切。", tag: "友情 无CP 女向" },
+        { path: "writing/pingdan/wan-fan.txt", title: "幼崽成长", desc: "斯特里克家族里多了一只人类幼崽。", tag: "平淡 无CP 女向" }
     ];
 
     const observationArticles = [
-        { path: "observation/lin-shu-ji.txt", title: "林叔：守门二十年", desc: "他记得每一个晚归学生的名字。", tag: "观察" },
-        { path: "observation/wang-lao-shi.txt", title: "王老师最后的一堂课", desc: "他说，比起知识，更希望我们学会提问。", tag: "观察" }
+        { path: "observation/cang-dong-xi.txt", title: "学校不让带熟食", desc: "怎么混淆过去。", tag: "观察" },
+        { path: "observation/wang-lao-shi.txt", title: "高中班主任是否厌女", desc: "他说，我偏向女生。", tag: "观察" }
     ];
 
     const skillsArticles = [
@@ -364,9 +368,9 @@
     ];
 
     const collegeArticles = [
-        { path: "college/study/gaosu-xue-xi.txt", title: "高数怎么学才不痛苦", desc: "我找到的方法，适合普通人。", tag: "科目" },
-        { path: "college/fun/she-tuan-nao-can.txt", title: "社团面试的离谱问答", desc: "师兄问我会不会翻跟头。", tag: "趣事" },
-        { path: "college/daily/tu-shu-guan.txt", title: "图书馆靠窗第三个位置", desc: "那里有我整个学期的记忆。", tag: "日常" }
+        { path: "college/study/gaosu-xue-xi.txt", title: "高数怎么学才不痛苦", desc: "我的学习方法。", tag: "科目" },
+        { path: "college/fun/she-tuan-nao-can.txt", title: "大学可以做什么", desc: "我的尝试记录。", tag: "学习" },
+        { path: "college/daily/tu-shu-guan.txt", title: "怎么给自己制造乐趣", desc: "无头脑纯发癫地。", tag: "疯子" }
     ];
 
     function renderCards(containerId, articles) {
